@@ -38,11 +38,11 @@ def cubic(n):
 		a.append(b)
 	return a
 def display():
-	value = input("Enter a number not greater than 1000:")
+	value = int(input("Enter a number not greater than 1000:"))
 	if value > 1000:
 		raise Exception("Stack overflow...")
 	
-	t = np.arange(1,int(value),5)
+	t = np.arange(1,value,5)
 	print(t)
 	plt.ylim([-100,2000])
 	plt.xlim([-100,250])
